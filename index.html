@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <title>Flutter Face Detection</title>
   <base href="/ub/" />
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- ✅ 順序正確且 defer 都加上 -->
@@ -12,5 +16,12 @@
   <script defer src="main.dart.js" type="application/javascript"></script>
 </head>
 <body>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('flutter_service_worker.js?v=210028567');
+    });
+  }
+</script>
 </body>
 </html>
