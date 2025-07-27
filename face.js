@@ -7,12 +7,12 @@ window.onload = async function () {
 
     console.log('✅ face-api.js loaded');
 
-    await faceapi.nets.tinyFaceDetector.loadFromUri('/models');
+    await faceapi.nets.tinyFaceDetector.loadFromUri('/ub/models');
     console.log('✅ face-api model loaded');
 
 
     window.detectFaces11 = async function (base64Image) {
-        //console.log('接收到圖片:', base64Image);
+        console.log('接收到圖片:', base64Image);
 
         const img = new Image();
         img.src = base64Image;
