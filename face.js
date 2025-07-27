@@ -12,7 +12,7 @@ window.onload = async function () {
 
 
     window.detectFaces11 = async function (base64Image) {
-        console.log('接收到圖片:', base64Image);
+        //console.log('接收到圖片:', base64Image);
 
         const img = new Image();
         img.src = base64Image;
