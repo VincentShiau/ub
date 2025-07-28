@@ -55624,8 +55624,8 @@ aq(){return new A.wr(new A.PU())}}
 A.wr.prototype={
 n1(){var s=0,r=A.Q(t.H),q=this,p,o,n
 var $async$n1=A.R(function(a,b){if(a===1)return A.N(b,r)
-while(true)switch(s){case 0:o=new A.zM(B.im,600,null,null,!0)
-o.Kz(null,null,600,!0)
+while(true)switch(s){case 0:o=new A.zM(B.im,300,null,null,!0)
+o.Kz(null,null,300,!0)
 s=2
 return A.W($.adQ().hr(o,B.j5),$async$n1)
 case 2:p=b
@@ -55641,7 +55641,7 @@ case 5:A.wX("\u672a\u9078\u53d6\u5716\u7247")
 case 4:return A.O(null,r)}})
 return A.P($async$n1,r)},
 R(a){var s=null,r=A.b([new A.z4(this.gXG(),s,s,s,s,s,s,!1,s,s,B.Js,s),B.Fv],t.nA),q=this.d
-if(q!=null)r.push(new A.qJ(A.ake(s,s,new A.ja(q,1)),300,s))
+if(q!=null)r.push(new A.qJ(A.ake(s,s,new A.ja(q,1)),200,s))
 return new A.tf(new A.p7(B.Jr,new A.Hi(s,s,1/0,56),s),A.M_(A.ahd(r,B.ob),s,s),s)}}
 A.a3x.prototype={
 $0(){this.a.d=this.b},
@@ -59773,7 +59773,7 @@ B.Is=new A.n(!0,B.z,null,".AppleSystemUIFont",null,null,null,null,null,null,null
 B.IH=new A.n(!0,B.m,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"blackRedwoodCity labelMedium",null,null,null,null)
 B.Gm=new A.n(!0,B.m,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"blackRedwoodCity labelSmall",null,null,null,null)
 B.Jq=new A.dc(B.HH,B.GV,B.HI,B.I7,B.GC,B.GJ,B.Ha,B.I_,B.Hl,B.Iw,B.Gd,B.Gt,B.Is,B.IH,B.Gm)
-B.Jr=new A.nx("Web \u62cd\u7167",null,null,null,null)
+B.Jr=new A.nx("\u884c\u5916\u62cd\u7167",null,null,null,null)
 B.Js=new A.nx("\u6253\u958b\u76f8\u6a5f",null,null,null,null)
 B.LH=new A.Z8(0,"system")
 B.Jt=new A.u3(null)
