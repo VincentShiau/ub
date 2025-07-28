@@ -46,6 +46,7 @@ const CORE = ["main.dart.js",
 "assets/FontManifest.json"];
 
 // During install, the TEMP cache is populated with the application shell files.
+/*
 self.addEventListener("install", (event) => {
   self.skipWaiting();
   return event.waitUntil(
@@ -55,9 +56,25 @@ self.addEventListener("install", (event) => {
     })
   );
 });
+*/
+
+
+// 在 install 階段跳過等待，馬上啟用新版
+self.addEventListener('install', function(event) {
+  self.skipWaiting(); // ⬅️ 強制跳過 waiting，馬上安裝
+});
+
+// 在 activate 階段強制接管
+self.addEventListener('activate', function(event) {
+  clients.claim(); // ⬅️ 新版 SW 立即接管頁面控制權
+});
+
+
 // During activate, the cache is populated with the temp files downloaded in
 // install. If this service worker is upgrading from one with a saved
 // MANIFEST, then use this to retain unchanged resource files.
+
+/*
 self.addEventListener("activate", function(event) {
   return event.waitUntil(async function() {
     try {
@@ -115,6 +132,9 @@ self.addEventListener("activate", function(event) {
     }
   }());
 });
+*/
+
+
 // The fetch handler redirects requests for RESOURCE files to the service
 // worker cache.
 self.addEventListener("fetch", (event) => {
