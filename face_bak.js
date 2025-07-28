@@ -7,11 +7,11 @@ window.onload = async function () {
 
     console.log('✅ face-api.js loaded');
 
-    await faceapi.nets.tinyFaceDetector.loadFromUri('/models');
+    await faceapi.nets.tinyFaceDetector.loadFromUri('models');
     console.log('✅ face-api model loaded');
 
 
-    window.detectFaces11 = async function (base64Image) {
+    window.detectFacesJs = async function (base64Image) {
         console.log('接收到圖片:', base64Image);
 
         const img = new Image();
@@ -39,12 +39,12 @@ window.onload = async function () {
         }
       };
 
-/*
-    window.detectFaces = function (base64Image) {
 
-        console.log('✅✅✅✅✅✅✅✅✅✅✅');
-
+    window.detectFacesJs = function(base64Image) {
       return Promise.resolve((async () => {
+
+        console.log('接收到圖片:', base64Image);
+
         const img = new Image();
         img.src = base64Image;
         await img.decode();
@@ -61,11 +61,15 @@ window.onload = async function () {
         );
 
         console.log('👤 Detected faces:', detections.length);
-        //return detections.length > 0;
-        return 'true'
+
+        // 模擬回傳 true / false
+        if (detections.length > 0) {
+          return true;
+        } else {
+          return false;
+        }
       })());
-    };
-    */
+    }
 
     console.log('👋 detectFaces 已註冊給 window');
   } catch (e) {

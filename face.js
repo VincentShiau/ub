@@ -11,8 +11,11 @@ window.onload = async function () {
     console.log('✅ face-api model loaded');
 
 
-    window.detectFacesJs = async function (base64Image) {
-        console.log('接收到圖片:', base64Image);
+
+    window.detectFacesJs = function(base64Image) {
+      return Promise.resolve((async () => {
+
+        //console.log('接收到圖片:', base64Image);
 
         const img = new Image();
         img.src = base64Image;
@@ -37,8 +40,8 @@ window.onload = async function () {
         } else {
           return false;
         }
-      };
-
+      })());
+    }
 
     console.log('👋 detectFaces 已註冊給 window');
   } catch (e) {
