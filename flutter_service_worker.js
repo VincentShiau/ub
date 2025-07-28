@@ -3,12 +3,12 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"flutter_bootstrap.js": "82feb8151e7561b85ac3c6a9c953b7ef",
+const RESOURCES = {"flutter_bootstrap.js": "a618b5351a7ce108273650a439760b46",
 "version.json": "481ec8aece375d3807e6d05d16fe804f",
 "face_bak.js": "7afed2afa30f3463f19d04a1d647b5ec",
-"index.html": "e8c9790765f8a259a8f1b74e7dfd9c80",
-"/": "e8c9790765f8a259a8f1b74e7dfd9c80",
-"main.dart.js": "bb7e2ec7aca6d15c7aacfa45b50544dc",
+"index.html": "afc5c4f3c7428c26212fc9e03c9b04e6",
+"/": "afc5c4f3c7428c26212fc9e03c9b04e6",
+"main.dart.js": "aac2e8d0e654dd9007743dbfc277ca30",
 "flutter.js": "83d881c1dbb6d6bcd6b42e274605b69c",
 "models/tiny_face_detector_model-weights_manifest.json": "5bab50532388f5da9b4cd85b15adc11c",
 "models/tiny_face_detector_model-shard1": "2e48b20953b0c59df47459d0319843a0",
