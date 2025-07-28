@@ -55585,7 +55585,7 @@ A.qp.prototype={
 ap(){return new A.v_()}}
 A.v_.prototype={
 Qg(){var s=A.aix("file")
-s.accept="image/*"
+s.accept="image/jpeg,image/png"
 s.setAttribute("capture","environment")
 s.click()
 A.abv(s,"change",new A.a0o(this,s),!1)},
@@ -59718,7 +59718,7 @@ B.IS=new A.n(!0,B.m,null,".AppleSystemUIFont",null,null,null,null,null,null,null
 B.Gx=new A.n(!0,B.m,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"blackRedwoodCity labelSmall",null,null,null,null)
 B.JB=new A.dc(B.HS,B.H5,B.HT,B.Ii,B.GN,B.GU,B.Hl,B.Ia,B.Hw,B.IH,B.Go,B.GE,B.ID,B.IS,B.Gx)
 B.JC=new A.nz("\u9032\u884c\u4eba\u81c9\u62cd\u7167\u5075\u6e2c",null,null,null,null)
-B.JD=new A.nz("4\u5916\u90e8\u958b\u6236\u4f5c\u696d \uff08\u4eba\u50cf\u62cd\u651d\u5075\u6e2c\uff09",null,null,null,null)
+B.JD=new A.nz("5 \u5916\u90e8\u958b\u6236\u4f5c\u696d \uff08\u4eba\u50cf\u62cd\u651d\u5075\u6e2c\uff09",null,null,null,null)
 B.LN=new A.YV(0,"system")
 B.JE=new A.ua(null)
 B.u4=new A.D6(0,"clamp")
