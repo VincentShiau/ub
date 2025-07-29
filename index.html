@@ -14,15 +14,49 @@
   <script defer src="assets/js/face-api.min.js"></script>
   <script defer src="face.js"></script>
   <script defer src="main.dart.js" type="application/javascript"></script>
+
+
+
+  <!-- zxing-js -->
+  <script src="https://unpkg.com/@zxing/library@latest"></script>
+  <script>
+    let codeReader;
+
+    window.startBarcodeScanner = async function(videoElementId) {
+      const videoElement = document.getElementById(videoElementId);
+      codeReader = new ZXing.BrowserMultiFormatReader();
+
+      try {
+        const result = await codeReader.decodeOnceFromVideoDevice(null, videoElement);
+        return result.text; // 條碼文字
+      } catch (err) {
+        console.error("🛑 Barcode scan error:", err);
+        return null;
+      }
+    };
+
+    window.stopBarcodeScanner = function() {
+      if (codeReader) {
+        codeReader.reset();
+      }
+    };
+  </script>
+
 </head>
 <body>
 <script>
   html.window.location.reload();
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
-      navigator.serviceWorker.register('flutter_service_worker.js?v=1902571263');
+      navigator.serviceWorker.register('flutter_service_worker.js?v=1525348674');
     });
   }
 </script>
+
+
+<video id="videoElement" style="width:100%;height:auto;"></video>
+
+
+
 </body>
 </html>
